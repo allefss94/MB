@@ -1,0 +1,6 @@
+@import './variables.css';
+@import './reset.css';
+@import './transitions.css';
+#app {
+  padding: 1rem;
+}
