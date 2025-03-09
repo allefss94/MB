@@ -13,6 +13,8 @@ Seguindo as especificações propostas no desafio técnico. Foi criada uma tela 
 * server: Contém a implementação de um servidor fake para simular a comunicação com a API. Como se trata de um projeto front-end, não foi implementado um servidor "real", ao invés disso foi utilizado o MirageJs para simular as requisições que de forma aleatória retorna os status de sucesso ou erro (201, 404, 500).
 * shared: Contém arquivos/implementações que podem ser compartilhadas por toda a aplicação. _ClientHttp_ sendo uma implementação basica do fetch para requisições HTTP e _validators_ validações para atender as regras do formulário.
 
+> Todo o projeto foi desenvolvido apenas para atender aos requisitos solicitados e obviamente em cenário real outras técnologias e estratégias poderiam ser utilizadas.
+
 
 ###
 

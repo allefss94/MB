@@ -49,7 +49,7 @@ const fields = {
     {
       component: defineAsyncComponent(() => import('./components/BaseInput.vue')),
       props: {
-        label: state.selectedEntityType == 'pf' ? 'Data de nascimento' : 'Data de abertura',
+        label: state.selectedEntityType.toLocaleLowerCase() == 'pf' ? 'Data de nascimento' : 'Data de abertura',
         id: 'date',       
         required: true
       }
@@ -85,7 +85,7 @@ const fields = {
     {
       component: defineAsyncComponent(() => import('./components/BaseInput.vue')),
       props: {
-        label: state.selectedEntityType === 'pf' ? 'Nome' : 'Razão social',
+        label: state.selectedEntityType == 'pf' ? 'Nome' : 'Razão social',
         id: 'name',
         required: true
       }
@@ -93,7 +93,7 @@ const fields = {
     {
       component: defineAsyncComponent(() => import('./components/BaseInput.vue')),
       props: {
-        label: state.selectedEntityType === 'pf' ? 'CPF' : 'CNPJ',
+        label: state.selectedEntityType == 'pf' ? 'CPF' : 'CNPJ',
         id: 'document',
         required: true
       }
@@ -101,7 +101,7 @@ const fields = {
     {
       component: defineAsyncComponent(() => import('./components/BaseInput.vue')),
       props: {
-        label: state.selectedEntityType === 'pf' ? 'Data de nascimento' : 'Data de abertura',
+        label: state.selectedEntityType == 'pf' ? 'Data de nascimento' : 'Data de abertura',
         id: 'date',
         required: true
       }

@@ -15,7 +15,7 @@ const computedTitle = computed(() => {
     case 1:
       return 'Seja bem-vindo(a)!'
     case 2:
-      return state.selectedEntityType === 'pf' ? 'Pessoa Fisica' : 'Pessoa Juridica'
+      return state.selectedEntityType == 'pf' ? 'Pessoa Fisica' : 'Pessoa Juridica'
     case 3:
       return 'Senha de acesso'
     case 4:
